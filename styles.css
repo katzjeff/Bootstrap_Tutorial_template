@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;800&display=swap');
+
+:root {
+    --ff-para: "Gemunu Libre";
+    --ff-headings: "Montserrat";
+
+    --fw--X_light: 100;
+    --fw--light: 200;
+    --fw-medium: 300;
+    --fw-std: 400;
+}
+
 body {
     padding: 0;
     margin: 0;
     background: #FEEFC1;
 }
-
+.background {
+	background: #dedec8;
+	padding: 4em 0;
+}
+.card-img {
+    border-radius: 50px;
+}
 .description {
 	left: 50%;
 	position: absolute;
@@ -13,11 +32,16 @@ body {
 }
 .description h1 {
 	color: #fffaeb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 10%;
 }
 .description p {
 	color: #FEEFC1;
 	font-size: 1.3rem;
 	line-height: 1.5;
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 300;
 }
 
 .description button {
@@ -25,6 +49,9 @@ body {
     background:#fffaeb;
     border-radius: 5px;
     color:#162131;
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 800;
+    margin-top: 5%;
 }
 .description button:hover {
 	border:1px solid #fff;
@@ -49,27 +76,48 @@ body {
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+    font-family: var(--ff-headings);
+    font-weight: 700;
 }
+
 .features img {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.features p {
+    font-family: var(--ff-para);
+    line-height: 1.8;
 }
 
 .features .form-control,
 .features input {
-	border-radius: 0;
+	border-radius: 10px;
 }
 .features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
-    color: #fff;
+    background-color: #162131;
+    border: 1px solid #162131;
+    color: #fffaeb;
     margin-top: 20px;
+    font-family: var(--ff-para);
 }
 .features .btn:hover {
-    background-color: #333;
-    border: 1px solid #333;
+    background-color: #fffaeb;
+    border: 1px solid #fffaeb;
+    color: #162131;
+}
+.footer-copyright {
+    color: #fffaeb;
+    padding: 40px 0;
+    font-family: var(--ff-para);
+    
+}
+
+.form-group {
+    font-family: var(--ff-para);
 }
 .overlay {
     position: absolute;
@@ -82,20 +130,88 @@ body {
 
 .navbar {
     background: #162131;
-    opacity: .9;
+    /* opacity: .9; */
 }
 .nav-link,
 .navbar-brand {
     color: #EFC990;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 .nav-link {
     margin-right: 1em !important;
-    text-transform: uppercase;
+    
 }
 .nav-link:hover {
     color:#fffaeb;
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.page-footer {
+    background-color: #222;
+    color: #fffaeb;
+    padding: 60px 0 30px;
+}
+
+.page-footer h6 {
+    font-family: var(--ff-headings);
+}
+
+.page-footer p {
+    font-family: var(--ff-para);
+    line-height: 1.8
+}
+
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.team .card {
+	background:none;
+	border: none;
+}
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+    font-family: var(--ff-headings);
+    font-weight: 700;
+}
+
+.team .card-text {
+    font-family: var(--ff-para);
+}
+
+
+@media (max-width: 580px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1rem;
+        line-height: 1.8em;
+    }
+ 
+    .features {
+        margin: 0;
+    }
 }
