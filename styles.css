@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #FEEFC1;
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: #fffaeb;
+}
+.description p {
+	color: #FEEFC1;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description button {
+    border:1px solid #fffaeb;
+    background:#fffaeb;
+    border-radius: 5px;
+    color:#162131;
+}
+.description button:hover {
+	border:1px solid #fff;
+    /* background:#fff; */
+    color:#032968;
+}
+
+.header {
+    background-image: url('/images/background/earth.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    background: #162131;
+    opacity: .9;
+}
+.nav-link,
+.navbar-brand {
+    color: #EFC990;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color:#fffaeb;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
